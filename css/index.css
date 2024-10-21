@@ -846,15 +846,19 @@ padding-bottom: 40px;
 .button{
     text-align: center;
 }
-    .portfolio-image img{
-        height: 400px;
-        width: 100%;
-        position: relative;
-    }
-    .portfolio-image{
-        height: 400px;
-        width: 40%;
-    }
+.portfolio-image img{
+    max-height: 400px; /* Limit max height */
+    width: auto; /* Let width adjust according to aspect ratio */
+    position: relative;
+}
+.portfolio-image{
+    height: 400px;
+    width: 100%;
+    display: flex; /* Use flexbox to center */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    overflow: hidden; /* Ensure any overflow is hidden */
+}
 .portfolio-image img::before{
     content: "";
     height: 100%;
