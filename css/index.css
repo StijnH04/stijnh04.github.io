@@ -682,7 +682,7 @@ body{
    position: relative;
    overflow: hidden;
 }
-.csharp-progress{
+.html-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -691,11 +691,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:70%;
+    width:95%;
     border-radius: 10px;
     background: #c70039;
 }
-.kotlin-progress{
+.js-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -705,11 +705,11 @@ body{
     font-family: poppins;
     justify-content: center;
     transition: all .4s ease;
-    width:30%;
+    width:90%;
     border-radius: 10px;
     background: #c70039;
 }
-.java-progress{
+.adobe-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -718,11 +718,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:40%;
+    width:83%;
     border-radius: 10px;
     background: #c70039;
 }
-.blender-progress{
+.php-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -730,7 +730,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:50%;
+    width:85%;
     border-radius: 10px;
     background: #c70039;
     transition: all .4s ease;
