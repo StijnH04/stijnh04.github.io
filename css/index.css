@@ -526,19 +526,18 @@ body{
     padding-top: 40px;
 }
 .cv a button{
-    background: transparent;
-    border:none;
+    background-color: #c70039 !important; /* Forcing background color to apply */
+    border: none;
     padding: 15px 30px;
     color: whitesmoke;
-    background: #c70039;
     outline: none;
-    font-size:20px;
-    font-family: aileron;
+    font-size: 20px;
+    font-family: aileron, sans-serif;
     border-radius: 4px;
     font-weight: 400;
     cursor: pointer;
     position: relative;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
 }
 .cv a button:hover{
