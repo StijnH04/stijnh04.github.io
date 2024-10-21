@@ -259,14 +259,15 @@
                  <div class="form-header">
                      Email Me
                  </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
-                    </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
+                 <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="149ad1c3-dcf7-449d-820c-7f64627b90fe">     
+
+                    <input  id="name" type="text" name="name" placeholder="name" class="input-name" required>
+                    <input id="email" type="email" name="email" placeholder="email" class="input-name" required> 
+                    <textarea id ="body" class="input-textarea" name="message" placeholder="message"required></textarea> 
+                    <button class="button" type="submit" id ="submit" value="send">Submit</button>            
+
                  </form>
                
              </div>

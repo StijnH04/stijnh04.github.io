@@ -1074,7 +1074,7 @@ padding-bottom: 40px;
 .contact-info{
     width: 40%;
     height: 500px;
-    background: url(../images/contact-back.jpg);
+    background: url(../images/Contact\ Background.png);
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -1117,7 +1117,7 @@ form{
     justify-content: center;
 }
 .input-name{
-    width: 40%;
+    width: 84%;
     padding:10px 20px;
     margin:14px;
     border-radius: 8px;
