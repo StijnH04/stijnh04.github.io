@@ -673,6 +673,20 @@ body{
     left: 5%;
     top:30%;
 }
+
+
+.leftProficiency{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+}    
+
+.rightProficiency{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+}
+
 .html-prog{
    width:100%;
    height:40px;
@@ -2242,13 +2256,6 @@ for tabs and large phones
             
             
 }
-
-
-
-
-
-
-
 
 @media all and (max-width: 9000px) and (min-width: 1441px){
 
