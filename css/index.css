@@ -525,18 +525,19 @@ body{
 .cv {
     padding-top: 40px;
 }
+
 .cv a button{
-    background-color: #c70039 !important; /* Forcing background color to apply */
-    border: none;
-    padding: 15px 30px;
-    color: whitesmoke;
-    outline: none;
-    font-size: 20px;
-    font-family: aileron, sans-serif;
-    border-radius: 4px;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
+    background-color: #c70039 !important ; /* Forcing background color to apply */
+    border: none ;
+    padding: 15px 30px ;    
+    color: whitesmoke !important;
+    outline: none ;
+    font-size: 25px !important;
+    font-family: aileron, sans-serif !important;
+    border-radius: 4px ;
+    font-weight: 400 ;
+    cursor: pointer ;
+    position: relative ;
     transition: all 0.4s ease;
 
 }
@@ -855,8 +856,9 @@ padding-bottom: 40px;
 }
 
 .button-container{
+    
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;  
 }
 
  button:hover .index{
