@@ -813,7 +813,7 @@ padding-bottom: 40px;
     color: #c70039;
     transition: all .4s ease;
 }
-.portfolio-text p{
+.portfolio-text p{    
     font-size: 16px;
     opacity: .8;
     font-family: poppins;
@@ -853,6 +853,12 @@ padding-bottom: 40px;
     opacity: 1;
     color:whitesmoke;
 }
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
  button:hover .index{
      position: relative;
     z-index: 4;
@@ -861,7 +867,7 @@ padding-bottom: 40px;
     opacity: 1;
     width: 120%;
 }
-.button{
+.button{    
     text-align: center;
 }
 .portfolio-image img{
