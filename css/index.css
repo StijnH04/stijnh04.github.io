@@ -911,6 +911,19 @@ padding-bottom: 40px;
     width: 100%;
     color:whitesmoke;
 }
+
+#airport-architect{
+    display: none;
+}
+
+.project-text{
+    color: whitesmoke;
+}
+
+.project-filter{
+    color: #c70039;
+}
+
 .blog-header{
     height: auto;
     width: 100%;
