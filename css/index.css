@@ -507,11 +507,10 @@ body{
 .about-img {
     position: relative; /* Position relative for absolute positioning of child */
     width: 100%; /* Full width */
-    max-width: 400px; /* Set a max width as needed */
+    max-width: 75%; /* Set a max width as needed */
     padding-top: 177.78%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625, so 1 / 0.5625 * 100) */
     overflow: hidden; /* Prevent overflow */
     border-radius: 40px; /* Rounded corners */
-
 }
 
 #about-content a{
@@ -821,7 +820,7 @@ padding-bottom: 40px;
     padding: 20px;
 }
 .portfolio-text button{
-    font-size: 16px;
+    font-size: 100%;
     opacity: .8;
     font-family: poppins;
     font-weight: 200;
@@ -855,8 +854,16 @@ padding-bottom: 40px;
 }
 
 .button-container{
+    
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;  
+
+    /*
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 10px; 
+    padding: 20px; 
+    */
 }
 
  button:hover .index{
@@ -871,12 +878,12 @@ padding-bottom: 40px;
     text-align: center;
 }
 .portfolio-image img{
-    max-height: 400px; /* Limit max height */
+    max-height: 75%; /* Limit max height */
     width: auto; /* Let width adjust according to aspect ratio */
     position: relative;
 }
 .portfolio-image{
-    height: 400px;
+    height: 100%;
     width: 100%;
     display: flex; /* Use flexbox to center */
     align-items: center; /* Center vertically */
