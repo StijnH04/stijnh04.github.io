@@ -822,7 +822,7 @@ padding-bottom: 40px;
     padding: 20px;
 }
 .portfolio-text button{
-    font-size: .833vw;
+    font-size: 16px;
     opacity: .8;
     font-family: poppins;
     font-weight: 200;
@@ -1369,9 +1369,6 @@ For devices with smaller width like mobile phone
 */
 
 
-
-
-
 @media only screen and (max-width: 550px){
     .header-content{
         height: 100vh;
@@ -1478,7 +1475,7 @@ For devices with smaller width like mobile phone
     .about-first-line{
         font-size: 28px;
         opacity: 1;
-        margin-bottom: 10px;
+        margin-bottom: 10px;        
         display: block;
     }
     .about-second-line{
@@ -1490,20 +1487,20 @@ For devices with smaller width like mobile phone
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: auto;
         padding-left: 10px;
         padding-right: 10px;
         flex-direction: column-reverse;
+        transform: translateY(-400px);
     }
     .about-img img{
-        width: 280px;
-        height:220px;
+        width: 100%;
+        height:1100px;
         padding: 5px;
         border-radius: 10%;
     }
     .about-img {
-        width: 100%;
-        height:250px;
+        width: 50%;
+        height:400px;
         text-align: center;
         overflow: hidden;
         border-radius: 10%;
@@ -1511,7 +1508,7 @@ For devices with smaller width like mobile phone
     .service{
         height:320px;
         width:90%;
-        margin: 1.5%;
+        margin-bottom: 1.5%;
         background-color: #191919;
         display: inline-block;
         box-shadow:0px 0px 25px rgb(0,0,0,.1);
@@ -1519,7 +1516,7 @@ For devices with smaller width like mobile phone
         text-align: center;
         z-index: 2;
         border-radius: 10px;
-        overflow: hidden;
+        overflow: hidden;        
     }
     .service-img img{
         display: inline-block;
@@ -1531,17 +1528,27 @@ For devices with smaller width like mobile phone
         height:80px;
         transition: all .8s ease;
     }
+    .services-heading{
+        transform: translateY(-400px);
+    }
+    .services-content{
+        transform: translateY(-400px);
+    }
     .skill{
         width:80%;
     }
     .prog{
         height:30px;
     }
+    .skills-header{
+        transform: translateY(-400px);
+    }
     .skills-content{
         height: auto;
         width:100%;
         margin-top: 20px;
         margin-bottom: 15px;
+        transform: translateY(-400px);
     }
     .portfolio{
         height:auto;
@@ -1581,6 +1588,39 @@ For devices with smaller width like mobile phone
                 font-family: poppins;
                 font-weight: 200;
                 padding: 15px;
+            }
+            .portfolio-text button{
+                font-size: 10px;
+                opacity: .8;
+                font-family: poppins;
+                font-weight: 200;
+                padding: 10px 20px;
+                background:transparent;
+                color:#c70039;
+                transition: all .4s ease;
+                outline: none;
+                margin: 20px;
+                border: 1.5px solid #c70039;
+                cursor: pointer;
+                overflow: hidden;
+                position: relative;
+                transition: all .4s ease;
+            }
+            .portfolio-text button::before{
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 200%;
+                transform: rotate(-15deg) translateY(-20px);
+                top: 0;
+                left: 0;
+                z-index: 3;
+                background: #c70039;
+                transition: all .7s ease;
+            }
+            .portfolio-text button:hover{
+                opacity: 1;
+                color:whitesmoke;
             }
             .cursor{
                 display: none;
@@ -2052,6 +2092,39 @@ for tabs and large phones
                 font-family: poppins;
                 font-weight: 200;
                 padding: 15px;
+            }
+            .portfolio-text button{
+                font-size: 13px;
+                opacity: .8;
+                font-family: poppins;
+                font-weight: 200;
+                padding: 10px 20px;
+                background:transparent;
+                color:#c70039;
+                transition: all .4s ease;
+                outline: none;
+                margin: 20px;
+                border: 1.5px solid #c70039;
+                cursor: pointer;
+                overflow: hidden;
+                position: relative;
+                transition: all .4s ease;
+            }
+            .portfolio-text button::before{
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 200%;
+                transform: rotate(-15deg) translateY(-20px);
+                top: 0;
+                left: 0;
+                z-index: 3;
+                background: #c70039;
+                transition: all .7s ease;
+            }
+            .portfolio-text button:hover{
+                opacity: 1;
+                color:whitesmoke;
             }
             .cursor{
                 display: none;
