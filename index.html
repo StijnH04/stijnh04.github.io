@@ -16,9 +16,6 @@
 <body>
     <!--contains all the div-->
     <div id="all">
-    <!--mouse  follower-->
-        <div class="cursor"></div>
-    <!--mouse  follower-->
     <!--loader-->
         <div id="loader">
             <span class="color">Stijn</span>Hogerwerf 
@@ -266,20 +263,74 @@
         <div id="airport-architect">            
             <div class="portfolio-header"> <span class="color"> Airport </span> Architect
             <span class ="header-caption"> Build your own <span class="color"> Airport</span></span></div>
+            <div class="about-main">
+                <!--about picture-->
+                <video width="640" height="480", autoplay muted>
+                    <source src="Videos/AirportArchitect/FullyFunctionalAirport.mp4" alt="video/mp4">
+                </video>
+
+                <div class="about-first-paragraph wow">                    
+                    <span class="portfolio-about"> This was a school project where my team and I needed to make a game to teach students about the background of an airport. We    decided that the player will make it's own airport terminal. This game is inspired by prison architect. 
+                        <br><br>
+                        In this project, my main role was <span class="portfolio-emphasis">programmer</span>. My responsibility was to implement features carefully and ensure they were bug-free for a smooth player experience. I also served as the <span class="portfolio-emphasis">notetaker</span> in meetings with our client and teachers, documenting discussions and feedback. This helped our team review and improve our work based on constructive input.                         
+                    </span>                    
+                 </div>
+                
+            </div>  
+                 
              <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
+                 <div class="portfolio portfolio-first">                    
                      <div class="portfolio-image">
-                        <img src="images/GoHome/Go-Home-Logo.png" alt="portfolio-first">
+                        <img src="images/AirportArchitect/ObjectPoolUML.png" alt="portfolio-first">
                      </div>
                      <div class="portfolio-text">
-                         <h2>Object Pool</h2>
-                         <p class="project-text">When you play the game longer, there will be more characters on screen. To increase the performance I made an custom Object Pool script. This Object Pool script is a generic object pool. With this I used generics for the first time.</p>
-                         <div class="button-container"> 
-                            <div class="button"><span class="project-filter"> Generics</div>                            
-                        </div>
-                        
+                        <h2>Object Pool</h2>
+                        <p class="project-text">When you play the game longer, more characters appear on screen, which can impact performance. To handle this, I created a custom, generic Object Pool script that efficiently manages frequently used objects, like characters or projectiles, by recycling them instead of repeatedly creating and destroying them. This script is a generic object pool that can work with any object type, which helped me learn and apply C# generics for the first time. Using generics allowed me to make the pool versatile and reusable across different game elements, enhancing performance as the game progresses. </p>
+                        <div class="button-container"> 
+                           <div class="button"><span class="project-filter"> Generics</div>
+                               <div class="button"><span class="project-filter"> Object Pool</div>                            
+                       </div>                        
+                    </div>                     
+                 </div>   
+                 
+                 <div class="portfolio portfolio-first">                    
+                    <div class="portfolio-image">
+                        <img src="images/AirportArchitect/StaffManagerUML.png" alt="portfolio-first">
                      </div>
-                 </div>                 
+                    <div class="portfolio-text">
+                       <h2>Staff Management</h2>
+                       <p class="project-text">To manage employees in the game, I created a dynamic staff management system that includes hiring, firing, and object pooling for efficient resource management. The systTo manage employees in the game, I created a dynamic Staff Management System that handles hiring, firing, and object pooling for efficient resource management. Each employee is represented by an Employee object, and their data is stored in a dictionary, making it easy to track and manage them by their unique ID.
+                        <br><br>                        
+                        The system utilizes an object pool to manage the creation and recycling of staff objects. When an employee is needed, the pool spawns a new one, and when an employee is no longer required, they are returned to the pool, optimizing memory usage and reducing the overhead of frequent instantiations. The hiring function checks if the player has enough funds before recruiting a new employee, while the firing function releases the employee's resources when they are let go.                        
+                        <br><br>                        
+                        The Staff Manager also includes a salary management system that calculates the total salary owed to all employees and processes their payments automatically. I ensured that all aspects of employee management are handled dynamically, with automatic adjustments for changes in the number of employees.                        
+                        <br><br>                        
+                        Through building this system, I learned how to manage dynamic objects and resources efficiently within a game, enhancing gameplay by reducing complexity and optimizing performance.</p>
+                       <div class="button-container"> 
+                          <div class="button"><span class="project-filter"> Dynamic Data Management</div>                        
+                      </div>                        
+                   </div>                     
+                </div> 
+                
+                <div class="portfolio portfolio-first">                    
+                    <div class="portfolio-image">
+                        <img src="images/AirportArchitect/RDTreeUML.png" alt="portfolio-first">
+                     </div>
+                    <div class="portfolio-text">
+                       <h2>Research Tree</h2>
+                       <p class="project-text">To unlock upgrades and building blocks in the game, the player must complete research tasks. For this, I created a Research Tree that organizes research nodes, where each node represents a different upgrade or technology. To efficiently manage the research process, I developed the RDTreeManager and ResearchNode classes.
+                        <br><br>
+                        The RDTreeManager handles the activation, queuing, and execution of research tasks. It tracks the research nodes, their current state (available, in development, or completed), and manages the queue of tasks. When a node is completed, the manager automatically activates the connected nodes and progresses to the next task in the queue. The manager also ensures that research can be paused, switched, and resumed.
+                        <br><br>
+                        The ResearchNode class represents an individual research task. Each node is linked to other nodes, and when a research task is completed, it unlocks the next set of nodes. The research value is accumulated over time, and once the required value is reached, the node is considered complete. I also added functionality to queue and remove research tasks, ensuring that the research process flows smoothly without interruption.
+                        <br><br>
+                        This system allows for organized and dynamic management of research tasks, ensuring the player can unlock new technologies and progress through the game without feeling overwhelmed by complexity. Through building this, I learned how to create a functional research tree that drives progression and enhances the overall gameplay experience.</p>
+                       <div class="button-container"> 
+                          <div class="button"><span class="project-filter"> R&D Tree</div>       
+                        <div class="button"><span class="project-filter"> Dynamic System</div>                    
+                      </div>                        
+                   </div>                     
+                </div>
              </div>
         </div>
         <!--PROJECT AIRPORT ARCHITECT END-->    
