@@ -95,6 +95,8 @@ $(function(){
     gsap.to('#blog',0,{display:"none"});
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -113,6 +115,8 @@ $(function(){
     gsap.to('#blog',0,{display:"none"});
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -131,6 +135,8 @@ $(function(){
     gsap.to('#blog',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});
@@ -149,6 +155,8 @@ $(function(){
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});    
@@ -168,6 +176,8 @@ $(function(){
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});    
@@ -187,6 +197,8 @@ $(function(){
     gsap.to('#portfolio',0,{display:"none"});
     gsap.to('#contact',0,{display:"none"});
     gsap.to('#home',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
     //Breaker
     gsap.to('#breaker',0,{display:"block"});
     gsap.to('#breaker-two',0,{display:"block",delay:.1});    
@@ -194,6 +206,48 @@ $(function(){
     gsap.to('#breaker-two',0,{display:"none",delay:2});
     //Enable Screen
     gsap.to('#airport-architect',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#shadowed-escape-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    //Disable Screens
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#blog',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#home',0,{display:"none"});
+    gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#go-home',0,{display:"none"});
+    //Breaker
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});    
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    //Enable Screen
+    gsap.to('#shadowed-escape',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
+  $('#go-home-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    //Disable Screens
+    gsap.to('#header',0,{display:"none"});
+    gsap.to('#about',0,{display:"none"});
+    gsap.to('#blog',0,{display:"none"});
+    gsap.to('#portfolio',0,{display:"none"});
+    gsap.to('#contact',0,{display:"none"});
+    gsap.to('#home',0,{display:"none"});
+    gsap.to('#airport-architect',0,{display:"none"});
+    gsap.to('#shadowed-escape',0,{display:"none"});
+    //Breaker
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});    
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    //Enable Screen
+    gsap.to('#go-home',0,{display:"block",delay:.7});
     gsap.to('#navigation-content',0,{display:'flex',delay:2});
   })
 

@@ -212,21 +212,6 @@
             <div class="portfolio-header"> <span class="color"> My </span> Projects
             <span class ="header-caption"> Some Of My <span class="color"> Work</span></span></div>
              <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/GoHome/Go-Home-Logo.png" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Go Home</h2>
-                         <p>Go home is a 3rd person strategy based hack and slash tower defense game where you as the captain must go from planet to planet to collect resources and to get back to your home planet.</p>
-                         <div class="button-container"> 
-                            <div class="button"><a href="https://bram-van-den-dongen.itch.io/go-home" target="_blank"><button><span class="index">Download Page<i class="gg-arrow-right"></i></span></button></a></div>
-                            <div class="button"><a href="#"><button><span class="index">Learn More<i class="gg-arrow-right"></i></span></button></a></div>
-                            <div class="button"><a href="https://github.com/Hotoroti/Go-Home" target="_blank"><button><span class="index">Repository<i class="gg-arrow-right"></i></span></button></a></div>
-                        </div>
-                        
-                     </div>
-                 </div>
                  <div class="portfolio portfolio-second">
                     <div class="portfolio-image">
                         <img src="images/AirportArchitect/Airport-Architect-logo.png" alt="portfolio-second">
@@ -250,12 +235,27 @@
                         <p>Shadowed Escape is a horror survival game where players explore a dark forest, gathering car parts to repair their vehicle, and evade a sound-sensitive monster that hunts based on noise and light.</p>
                         <div class="button-container"> 
                             <div class="button"><a href="https://hotoroti.itch.io/shadowed-escape" target="_blank"><button><span class="index">Download Page<i class="gg-arrow-right"></i></span></button></a></div>
-                            <div class="button"><a href="#"><button><span class="index">Learn More<i class="gg-arrow-right"></i></span></button></a></div>
+                            <div class="button"><a href="#"><button id="shadowed-escape-link"><span class="index">Learn More<i class="gg-arrow-right"></i></span></button></a></div>
                             <div class="button"><a href="https://github.com/Hotoroti/Shadowed-Escape" target="_blank"><button><span class="index">Repository<i class="gg-arrow-right"></i></span></button></a></div>
                         </div>
                         
                     </div>
-                </div>                             
+                </div>    
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-image">
+                       <img src="images/GoHome/Go-Home-Logo.png" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Go Home</h2>
+                        <p>Go home is a 3rd person strategy based hack and slash tower defense game where you as the captain must go from planet to planet to collect resources and to get back to your home planet.</p>
+                        <div class="button-container"> 
+                           <div class="button"><a href="https://bram-van-den-dongen.itch.io/go-home" target="_blank"><button><span class="index">Download Page<i class="gg-arrow-right"></i></span></button></a></div>
+                           <div class="button"><a href="#"><button id="go-home-link"><span class="index">Learn More<i class="gg-arrow-right"></i></span></button></a></div>
+                           <div class="button"><a href="https://github.com/Hotoroti/Go-Home" target="_blank"><button><span class="index">Repository<i class="gg-arrow-right"></i></span></button></a></div>
+                       </div>
+                       
+                    </div>
+                </div>                         
              </div>
         </div>
         <!--portfolio end-->    
@@ -334,6 +334,110 @@
              </div>
         </div>
         <!--PROJECT AIRPORT ARCHITECT END-->    
+         <!--PROJECT SHADOWED ESCAPE PAGE-->
+         <div id="shadowed-escape">            
+            <div class="portfolio-header"> <span class="color"> Shadowed </span> Escape
+            <span class ="header-caption"> Escape the <span class="color"> Terror</span></span></div>
+            <div class="about-main">
+                <!--about picture-->
+                <div class="about-first-paragraph wow">                    
+                    <span class="portfolio-about"> I needed to make and publish a game in 3 days for a school project. For this I wanted to make a horror game. So in the game you need to walk through a forrest to find parts to repair your car. But their are monsters walking around who will react to sound and to light. 
+                        <br><br>
+                        As this was an individual project, I took on the roles of both <span class="portfolio-emphasis">programmer</span> and <span class="portfolio-emphasis">designer</span>, handling all core aspects of the game’s development. To streamline the process and focus on coding and design, I sourced assets from the Unity Asset Store, which provided high-quality visuals and audio elements that I adapted to fit my project’s needs. This experience allowed me to practice balancing technical and creative responsibilities in a solo project.                         
+                    </span>                    
+                 </div>
+                
+            </div>  
+                 
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/ShadowedEscape/EnemyMovementUML.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Enemy AI</h2>
+                        <p class="project-text">To create a suspenseful and dynamic AI system for the monster in the game, I developed a behavior management system that reacts to player actions and environmental factors in real-time. This AI system features a range of monster states—including Roaming, TowardSound, and TowardPlayer—each of which determines how the monster interacts with the player, creating a more immersive horror experience.
+                            <br><br>
+                            In the Roaming state, the monster wanders randomly within a set radius around the player, moving to new locations periodically. This adds a layer of unpredictability, keeping the player on edge. The system includes mechanisms to detect sounds through a microphone input: if the player speaks too loudly or makes noise, the monster enters the TowardSound state and approaches the source of the sound, bringing an extra level of interactivity and tension. Additionally, the monster can detect the player's flashlight or proximity, triggering the TowardPlayer state, where it homes in directly on the player, heightening the threat.
+                            <br><br>
+                            To make this system efficient and realistic, I utilized Unity's NavMeshAgent for smooth pathfinding and character movement, along with an Animator for dynamically adjusting the monster's animations. By leveraging Unity's geometry utility functions, the monster also checks if the player is within its field of view, adding a layer of stealth challenge for the player.
+                            <br><br>
+                            Through building this AI system, I gained experience with advanced state management, real-time audio processing, and navigation control in Unity. This project helped me deepen my understanding of player-centered AI design, enhancing gameplay immersion by making the monster’s behavior feel reactive and lifelike.  </p>
+                        <div class="button-container"> 
+                           <div class="button"><span class="project-filter"> AI State Management</div>
+                               <div class="button"><span class="project-filter"> Audio-Based AI Detection</div>                            
+                       </div>                        
+                    </div>                     
+                 </div>   
+                 
+                 <div class="portfolio portfolio-first">                    
+                    <div class="portfolio-image">
+                        <img src="images/ShadowedEscape/AudioDetection.png" alt="portfolio-first">
+                     </div>
+                    <div class="portfolio-text">
+                       <h2>Mic Detection</h2>
+                       <p class="project-text">This AudioLoudnessDetection class is a core component for creating an interactive enemy AI that responds to the player’s real-time microphone input, adding a unique and immersive element to gameplay. Here’s how it works:
+                        <br><br>
+                        The class captures audio from the player’s microphone, analyzes the loudness, and provides a value that reflects the player's current noise level. This loudness level can be used by the enemy AI to determine the player’s position if they make too much noise, adding a stealth and suspense dynamic.</p>
+                       <div class="button-container"> 
+                          <div class="button"><span class="project-filter"> Real-Time Sound Detection</div>                        
+                      </div>                        
+                   </div>                     
+                </div> 
+             </div>
+        </div>
+        <!--PROJECT SHADOWED ESCAPE END-->   
+        <!--PROJECT GO HOME PAGE-->
+        <div id="go-home">            
+            <div class="portfolio-header"> <span class="color"> Go </span> Home
+            <span class ="header-caption"> Time to <span class="color">Survive</span></span></div>
+            <div class="about-main">
+                <!--about picture-->
+                <div class="about-first-paragraph wow">                    
+                    <span class="portfolio-about"> This was the first project I needed to make in unity. For this my team and I decided to make a hack-and-slash tower defence game. Where you need to defend your homebase against hordes of enemies.
+                        <br><br>
+                        My task in this project was a <span class="portfolio-emphasis">programmer</span>.My responsibility was to implement features carefully and ensure they were bug-free for a smooth player experience.                         
+                    </span>                    
+                 </div>
+                
+            </div>  
+                 
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GoHome/routeFollowing.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Enemy AI</h2>
+                        <p class="project-text">
+                            The Enemy script manages the enemy's health, damage, movement, and knockback. It includes methods for taking damage, reducing health, and applying knockback using a NavMeshAgent for movement and a Rigidbody for physical interactions. The TakeDamage method reduces health, and the Die method destroys the enemy when health reaches zero. The KnockBack coroutine moves the enemy upon being hit, while the enemy's movement speed is controlled via the speed variable. This system ensures realistic combat and enemy behavior, responding to player actions effectively.
+                            <br><br>
+                            The Enemy Controller defines the behavior of an enemy character in a game, using a NavMeshAgent for movement and targeting different routes or the player. It includes a system for dynamically selecting one of several predefined routes, where the enemy moves between checkpoints. The RouteStart method sets up the initial route based on a spawner ID, choosing between different path routes. The TargetRoute methods control the enemy’s movement towards checkpoints along these routes, checking distances to determine when to proceed to the next point. The Attack method allows the enemy to switch to a "Melee" animation when within a stopping distance of the target, otherwise it moves towards the target with a "Walking" animation. Additionally, the FaceTarget method ensures the enemy faces the player or the current target. If the player comes within the lookRadius, the enemy will switch its target to the player. This system enables more immersive and dynamic enemy AI behavior, where the enemy can follow a route and switch to pursuing the player if the player gets too close.
+                            <br><br>
+                            Through this system, I gained hands-on experience with Unity’s NavMeshAgent and pathfinding tools, learning to create AI that navigates through waypoints and adapts to the environment. I implemented a flexible route system that allows enemies to follow different paths, making encounters unpredictable and dynamic. This project also deepened my understanding of modular AI design, where I could easily adjust the behavior and animations of the enemy, enhancing gameplay immersion.  </p>
+                        <div class="button-container"> 
+                           <div class="button"><span class="project-filter"> AI State Management</div>
+                               <div class="button"><span class="project-filter"> NavMesh</div>                            
+                       </div>                        
+                    </div>                     
+                 </div>   
+                 
+                 <div class="portfolio portfolio-first">                    
+                    <div class="portfolio-image">
+                        <img src="images/GoHome/Spawner.png" alt="portfolio-first">
+                     </div>
+                    <div class="portfolio-text">
+                       <h2>Spawner</h2>
+                       <p class="project-text">
+                        This code is responsible for managing enemy spawning in waves within a game. It utilizes a list of spawn points (spawnerList) and a spawn radius (spawnRadius) to determine where enemies will appear on the map. The enemies are spawned at random intervals (newEnemySpawn) within a specific wave duration (maxTimeInWave), with the wave timer controlling when to trigger the next wave. The EnemySpawn() coroutine handles the process, ensuring that enemies are instantiated at random positions around selected spawners, and the number of enemies spawned (nEnemy) is controlled by the spawn logic. Additionally, the script includes logic for handling different spawn points, allowing for flexibility in how enemies are distributed across the level.</p>
+                       <div class="button-container"> 
+                          <div class="button"><span class="project-filter"> Wave Spawner</div>                        
+                      </div>                        
+                   </div>                     
+                </div> 
+             </div>
+        </div>
+        <!--PROJECT GO HOME END-->  
         <!--CONTACT-page-->
      <div id="contact">        
          <div class="contact-header">Contact <span class="color"> Me</span>

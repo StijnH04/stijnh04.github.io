@@ -924,6 +924,14 @@ padding-bottom: 40px;
     display: none;
 }
 
+#shadowed-escape{
+    display: none;
+}
+
+#go-home{
+    display: none;
+}
+
 .project-text{
     color: whitesmoke;
 }
