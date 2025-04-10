@@ -741,19 +741,6 @@ body{
     border-radius: 10px;
     background: #c70039;
 }
-.godot-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:25%;
-    border-radius: 10px;
-    background: #c70039;
-    transition: all .4s ease;
-}
 .blender-progress{
     position: absolute;
     top:10%;
@@ -763,6 +750,19 @@ body{
     align-items: center;
     justify-content: center;
     width:65%;
+    border-radius: 10px;
+    background: #c70039;
+    transition: all .4s ease;
+}
+.godot-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25%;
     border-radius: 10px;
     background: #c70039;
     transition: all .4s ease;
