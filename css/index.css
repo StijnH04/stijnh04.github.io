@@ -958,6 +958,39 @@ padding-bottom: 40px;
     display: none;
 }
 
+#graduation-project{
+    display: none;
+}
+
+.graduation-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.graduation-layout .portfolio-image{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.graduation-layout .portfolio-image img{
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+    display: block;
+}
+
+.graduation-layout .portfolio-text{
+    width: 55%;
+    margin-top: 0;
+}
+
 .project-text{
     color: whitesmoke;
 }

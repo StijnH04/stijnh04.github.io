@@ -235,6 +235,20 @@
             <div class="portfolio-header"> <span class="color"> My </span> Projects
             <span class ="header-caption"> Some Of My <span class="color"> Work</span></span></div>
              <div id="portfolio-content">
+                <!--GRADUATION PROJECT BUTTON-->
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-image">
+                        <img src="images/GraduationProject/EngineArchitecureDiagram.png" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Graduation Project</h2>
+                        <p>Modular Engine Architecture is a research-driven C++ game engine project focused on designing a lightweight and maintainable engine architecture for Grimmwyrd Studios. The project explored how modular subsystem design, performance-oriented architecture, and scalable workflows can improve development efficiency compared to large commercial engines such as Unreal Engine.</p>
+                        <div class="button-container"> 
+                            <div class="button"><a href="#"><button id="graduation-project-link"><span class="index"> Learn More<i class="gg-arrow-right"></i></span></button></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--GO HOME BUTTON-->
                  <div class="portfolio portfolio-second">
                     <div class="portfolio-image">
                         <img src="images/AirportArchitect/Airport-Architect-logo.png" alt="portfolio-second">
@@ -282,6 +296,184 @@
              </div>
         </div>
         <!--portfolio end-->    
+         <div id = "graduation-project">
+            <div class="portfolio-header"> <span class="color"> Graduation </span> Project
+            <span class ="header-caption"> Design a modular <span class="color"> C++ Engine</span></span></div>
+
+            <div class="about-main">
+                <!--about picture-->
+                 <!--about picture-->
+                <div class="about-first-paragraph wow">                    
+                    <span class="portfolio-about"> 
+                    This thesis project focused on researching, designing, and prototyping a lightweight modular C++ game engine for Grimmwyrd Studios. The goal of the project was to investigate how a custom engine architecture could improve performance, maintainability, extensibility, and development workflows compared to large commercial engines such as Unreal Engine.
+
+                    <br><br>
+
+                    My role in this project was as a <span class="portfolio-emphasis">engine programmer and software architect</span>. My responsibility was to research modern engine architectures, analyze technical tradeoffs between existing engines, and design a modular subsystem architecture for rendering, physics, input handling, and resource management. In addition, I developed a prototype implementation in C++ to validate the proposed architecture and evaluate how modular design principles could support scalable and maintainable engine development.                       
+                    </span>                    
+                 </div>                 
+             </div>
+
+             <div id="portfolio-content">
+                <!--ARCHITECTURE BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/ECS.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Architecture</h2>
+                        <p class="project-text">
+                         During the research phase of the project, multiple architectural approaches were analyzed, including Object-Oriented Programming (OOP), component-based architectures, node-based systems, and Entity-Component-System (ECS). Each approach provided different advantages, but not all of them fully supported the modularity, scalability, and maintainability requirements identified for the engine architecture.
+                        <br><br>
+                        Traditional object-oriented architectures often rely on deep inheritance hierarchies, which can become difficult to maintain as projects grow in complexity. Node-based structures provide clear scene hierarchies, but large scenes can become increasingly difficult to manage. Component-based approaches improve modularity, but they frequently combine data and behaviour within the same structures, which can reduce flexibility when systems expand.
+                        <br><br>
+                        Based on these findings, the Entity-Component-System (ECS) architecture was selected as the foundation of the engine prototype. In the ECS model, entities act as identifiers, components store data, and systems process entities containing specific component combinations. By separating data from behaviour, ECS reduces tight coupling between systems and allows engine subsystems to operate independently. This modular structure improves extensibility and allows new gameplay systems or engine features to be introduced without requiring major architectural changes.
+                        <br><br>
+                        Another important reason for selecting ECS was its suitability for performance-oriented system design. Because component data can be stored in contiguous memory structures, systems can process large numbers of entities efficiently using modern CPU caching techniques. The architecture also simplifies integration with external systems by keeping gameplay state structured and data-driven rather than tightly embedded within object hierarchies.
+                        <br><br>
+                        Through researching and implementing ECS architecture, I gained experience with data-oriented design, modular engine architecture, scalable system organization, and performance-focused runtime structures in C++. This project strengthened my understanding of modern game engine architecture and maintainable large-scale system design.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter"> ECS</div>
+                            <div class="button"><span class="project-filter"> Data-Oriented Design</div>         
+                            <div class="button"><span class="project-filter"> Engine Architecture</div>                        
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--ARCHITECTURE END-->  
+
+                <!--ENGINE CORE BEGIN-->
+                 <div class="portfolio portfolio-first graduation-layout">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/GameLoop.png" class="graduation-image" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Engine Core</h2>
+                        <p class="project-text">
+                        The Engine Core serves as the central control structure of the modular C++ game engine, responsible for initializing the engine, managing the main update cycle, and coordinating communication between subsystems such as rendering, physics, input handling, and resource management. By centralizing system execution, the engine maintains a consistent and predictable update order while improving maintainability and reducing dependencies between subsystems.
+                        <br><br>
+                        At the center of the Engine Core is the Game Loop, which continuously updates the game state during runtime. Each iteration processes player input, updates ECS systems and game logic, performs physics calculations, and renders the updated frame to the screen. The loop combines delta time and a fixed timestep to balance smooth frame-independent updates with stable and deterministic physics simulation behaviour.
+                        <br><br>
+                        Within the ECS architecture, the Engine Core executes systems sequentially based on the components attached to entities. For example, movement systems process entities containing position and velocity components, while rendering systems handle graphical components. This structure enforces a clear separation between data and behaviour while ensuring all gameplay systems remain synchronized during execution.
+                        <br><br>
+                        Through developing this system, I gained practical experience designing modular engine architecture, implementing a custom game loop, and integrating ECS-based system execution in C++. This project strengthened my understanding of maintainable engine design, subsystem communication, and scalable runtime architecture for game development.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter">Game Loop</span></div>
+                            <div class="button"><span class="project-filter">ECS Systems</span></div>
+                            <div class="button"><span class="project-filter">Runtime Architecture</span></div>                   
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--ENGINE CORE END-->              
+
+                <!--RENDER ENGINE BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/RenderLayer.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Render Engine</h2>
+                        <p class="project-text">
+                        The Render Engine is responsible for converting the internal game world representation into visual output displayed on the screen. The system processes transformations, meshes, textures, lighting data, and camera information before sending rendering instructions to the graphics hardware through a graphics API. Because rendering is one of the most performance-critical subsystems of a game engine, the architecture was designed with a strong focus on modularity, efficiency, and long-term maintainability.
+                        <br><br>
+                        To simplify system organization and support different rendering workflows, the rendering architecture is separated into dedicated 2D and 3D rendering modules. The 2D renderer handles sprite-based objects such as user interfaces, particle effects, and screen-aligned graphics using textured quads and sprite batching techniques to reduce GPU draw calls and improve rendering performance. The 3D renderer processes mesh geometry, camera projection, depth buffering, and shader-based lighting calculations to render environments and three-dimensional objects.
+                        <br><br>
+                        To improve portability and extensibility, the engine introduces a graphics abstraction layer between the rendering systems and the underlying graphics API. Instead of directly communicating with a platform-specific API, the rendering systems interact with a generic rendering interface that supports interchangeable backend implementations. This abstraction allows the engine to support multiple graphics APIs and simplifies cross-platform deployment for both PC and console environments without requiring changes to the higher-level rendering architecture.
+                        <br><br>
+                        Separating the 2D and 3D rendering pipelines improves maintainability by isolating rendering responsibilities and reducing unnecessary subsystem dependencies. The modular architecture also allows additional rendering features and graphical techniques to be integrated without restructuring the entire rendering system. Through designing this Render Engine architecture, I gained experience with rendering pipeline organization, graphics abstraction layers, shader-based rendering concepts, batching optimization techniques, and scalable renderer design in C++.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter">Rendering Pipeline</span></div>
+                            <div class="button"><span class="project-filter">Graphics Abstraction</span></div>
+                            <div class="button"><span class="project-filter">2D & 3D Rendering</span></div>                  
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--RENDER ENGINE END-->
+
+                <!--INPUT SYSTEM BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/InputSystem.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Input System</h2>
+                        <p class="project-text">
+                        The Input System is responsible for processing player interactions and translating hardware signals into gameplay actions that can be used throughout the engine. The architecture was designed to support multiple input devices, including keyboards, mice, and controllers, while remaining modular and independent from platform-specific implementations.
+                        <br><br>
+                        To achieve this, the engine introduces an input abstraction layer that converts raw API-specific inputs into engine-defined input codes. Instead of gameplay systems directly interacting with hardware-specific input values, all systems communicate through a unified engine input interface. This separation improves maintainability and allows the underlying input API to be replaced without modifying gameplay logic or higher-level engine systems.
+                        <br><br>
+                        The system also includes an input mapping layer that connects engine-defined inputs to gameplay actions such as movement, jumping, or interaction events. Multiple hardware inputs can be mapped to the same gameplay action, simplifying support for different input devices and allowing control schemes to be modified without changing gameplay code.
+                        <br><br>
+                        To improve flexibility and subsystem communication, the Input System operates using an event-driven architecture. When a mapped action is triggered, an event is dispatched through the engine’s event system, allowing subscribed systems such as movement, gameplay logic, or user interface systems to respond independently. During each iteration of the game loop, the engine collects hardware input, translates the signals through the abstraction layer, processes the input mappings, and dispatches the resulting events to subscribed systems.
+                        <br><br>
+                        Through designing this Input System architecture, I gained experience with event-driven programming, input abstraction layers, modular system communication, and cross-platform input handling in C++. This project strengthened my understanding of scalable engine architecture and maintainable gameplay system integration.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter">Event-Driven Architecture</span></div>
+                            <div class="button"><span class="project-filter">Input Mapping</span></div>
+                            <div class="button"><span class="project-filter">Cross-Platform Input</span></div>               
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--INPUT SYSTEM END-->
+
+                <!--RESOURCE MANAGEMENT BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/ResourceManager.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Resource Management</h2>
+                        <p class="project-text">
+                        The Resource Management System is responsible for loading, storing, and providing access to game assets used throughout the engine. These resources include textures, images, audio files, and other runtime data required by different engine subsystems. The architecture was designed to improve maintainability, workflow efficiency, and modular access to resources across the engine.
+                        <br><br>
+                        To simplify project organization and ensure consistent asset access, all resources are stored within a dedicated Assets directory inside the project structure. This standardized layout allows the engine to reliably locate and load assets without requiring complex file path management within gameplay or engine systems.
+                        <br><br>
+                        The engine introduces a dedicated resource management layer that acts as an abstraction between the file system and the engine subsystems. Instead of directly interacting with files, systems access resources through predefined loading functions such as texture, image, or audio loaders. These functions handle locating the asset, loading it into memory, and returning a usable resource object to the requesting system. By centralizing resource loading within a single subsystem, the engine maintains a clear separation between asset storage and gameplay logic.
+                        <br><br>
+                        The modular design also improves extensibility by allowing new resource types to be integrated without restructuring existing systems. Additional loading functionality can be added to the resource manager while maintaining the same external interface for the rest of the engine. The architecture also creates opportunities for future optimizations such as asset caching, memory management improvements, and asynchronous resource loading.
+                        <br><br>
+                        Through designing this Resource Management System, I gained experience with file handling, asset pipelines, abstraction layers, modular engine architecture, and scalable resource loading systems in C++. This project strengthened my understanding of maintainable engine workflows and centralized asset management within modern game engine development.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter">Asset Management</span></div>
+                            <div class="button"><span class="project-filter">File Handling</span></div>
+                            <div class="button"><span class="project-filter">Modular Systems</span></div>            
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--RESOURCE MANAGEMENT END-->
+
+                <!--PHYSICS ENGINE BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="portfolio-image">
+                        <img src="images/GraduationProject/PhysicsSystem.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                        <h2>Physics System</h2>
+                        <p class="project-text">
+                        The Physics Engine is responsible for simulating the physical behaviour of entities within the game world, including movement, collision detection, and collision response. The system was designed as an independent subsystem within the engine architecture to ensure that physics calculations remain modular, maintainable, and separate from gameplay logic.
+                        <br><br>
+                        Within the ECS architecture, entities that require physical behaviour contain physics-related components such as position, velocity, and collider components. The engine supports simple geometric colliders, including box and circle colliders, which are used to efficiently detect intersections and interactions between entities. By processing entities through component-based physics systems, the engine maintains a clean separation between data and behaviour while supporting scalable entity management.
+                        <br><br>
+                        During each physics update cycle, the system updates entity movement, performs collision detection, and calculates collision responses to prevent objects from overlapping. Collision calculations update the position and velocity data stored within the entity components, allowing other systems such as rendering and gameplay logic to use the updated world state. To maintain stable and deterministic simulation behaviour, the physics engine operates using a fixed timestep rather than frame-dependent delta time updates.
+                        <br><br>
+                        Running physics calculations at a constant interval improves collision reliability and prevents inconsistencies caused by fluctuating frame rates. The modular ECS-based architecture also allows additional collider types and future physics features to be integrated without requiring major structural changes to the engine.
+                        <br><br>
+                        Through designing this Physics Engine architecture, I gained experience with collision systems, fixed timestep simulation, ECS-driven physics workflows, component-based entity processing, and scalable runtime system design in C++. This project strengthened my understanding of deterministic simulation behaviour and modular physics architecture within modern game engines.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter">Collision Detection</span></div>
+                            <div class="button"><span class="project-filter">Fixed Timestep</span></div>
+                            <div class="button"><span class="project-filter">Physics Systems</span></div>        
+                       </div> 
+                    </div>                     
+                 </div>   
+                <!--PHYSICS ENGINE END-->
+            </div>  
+        </div>
         <!--PROJECT AIRPORT ARCHITECT PAGE-->
         <div id="airport-architect">            
             <div class="portfolio-header"> <span class="color"> Airport </span> Architect
@@ -423,8 +615,7 @@
                     </span>                    
                  </div>
                 
-            </div>  
-                 
+            </div>                   
              <div id="portfolio-content">
                  <div class="portfolio portfolio-first">                    
                      <div class="portfolio-image">
@@ -460,7 +651,7 @@
                 </div> 
              </div>
         </div>
-        <!--PROJECT GO HOME END-->  
+        <!--PROJECT GO HOME END-->         
         <!--CONTACT-page-->
      <div id="contact">        
          <div class="contact-header">Contact <span class="color"> Me</span>
