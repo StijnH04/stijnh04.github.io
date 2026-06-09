@@ -212,6 +212,20 @@ $(function(){
     gsap.to('#graduation-project',0,{display:"block",delay:.7});
     gsap.to('#navigation-content',0,{display:'flex',delay:2});
   })
+  $('#vrchat-clubworld-project-link').on('click',function(){
+    gsap.to('#navigation-content',0,{display:"none",delay:.7});
+    gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
+    //Disable Screens
+    hideAllPages();
+    //Breaker
+    gsap.to('#breaker',0,{display:"block"});
+    gsap.to('#breaker-two',0,{display:"block",delay:.1});    
+    gsap.to('#breaker',0,{display:"none",delay:2});
+    gsap.to('#breaker-two',0,{display:"none",delay:2});
+    //Enable Screen
+    gsap.to('#vrchat-clubworld-project',0,{display:"block",delay:.7});
+    gsap.to('#navigation-content',0,{display:'flex',delay:2});
+  })
 
 })
 $(function(){
@@ -256,5 +270,5 @@ function hideAllPages() {
     gsap.to('#go-home',0,{display:"none"});
     gsap.to('#airport-architect',0,{display:"none"});
     gsap.to('#graduation-project',0,{display:"none"});
+    gsap.to('#vrchat-clubworld-project',0,{display:"none"});
 }
-

@@ -262,7 +262,22 @@
                         </div>
                     </div>
                 </div>
-                <!--GO HOME BUTTON-->
+                <!--VRCHATWORLD BUTTON-->
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-image">
+                        <img src="images/VRChatClubWorld/VRCHAT WORLD INDEVELOPMENT.png" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>VRChat World</h2>
+                        <span class="project-status">IN DEVELOPMENT</span>
+
+                        <p>Building a VRChat world with custom interactive systems, synchronized multiplayer features, and modular UdonSharp-based functionality for social VR experiences.</p>
+                        <div class="button-container"> 
+                            <div class="button"><a href="#"><button id="vrchat-clubworld-project-link"><span class="index"> Learn More<i class="gg-arrow-right"></i></span></button></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Airport Architect BUTTON-->
                  <div class="portfolio portfolio-second">
                     <div class="portfolio-image">
                         <img src="images/AirportArchitect/Airport-Architect-logo.png" alt="portfolio-second">
@@ -276,7 +291,8 @@
                         </div>
                         
                     </div>
-                </div>             
+                </div>
+                <!--Shadowed Escape BUTTON-->             
                 <div class="portfolio portfolio-third">
                     <div class="portfolio-image">
                         <img src="images/ShadowedEscape/ShadowedEscapeBanner.png" alt="portfolio-third">
@@ -291,7 +307,8 @@
                         </div>
                         
                     </div>
-                </div>    
+                </div>   
+                <!--GO HOME BUTTON--> 
                 <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
                        <img src="images/GoHome/Go-Home-Logo.png" alt="portfolio-first">
@@ -306,10 +323,11 @@
                        </div>
                        
                     </div>
-                </div>                         
+                </div>                  
              </div>
         </div>
         <!--portfolio end-->    
+        <!--GRADUATION PROJECT PAGE-->
          <div id = "graduation-project">
             <div class="portfolio-header"> <span class="color"> Graduation </span> Project
             <span class ="header-caption"> Design a modular <span class="color"> C++ Engine</span></span></div>
@@ -488,6 +506,154 @@
                 <!--PHYSICS ENGINE END-->
             </div>  
         </div>
+        <!--GRADUATION PROJECT END-->
+        <!--VRCHAT CLUB WORLD PAGE-->
+         <div id = "vrchat-clubworld-project">
+            <div class="portfolio-header"> <span class="color"> VRChat </span> World
+            <span class ="header-caption"> Developing a social <span class="color"> VR world</span>.</span></div>
+            <div class="about-main">
+                <!--about picture-->                
+                 <!--about picture-->
+                <div class="about-first-paragraph wow">                    
+                    <span class="portfolio-about"> 
+                    This project focuses on the development of a social VR world for VRChat. The goal is to create an immersive environment where users can socialize, attend events, and interact with custom-built systems designed specifically for virtual reality. The project combines environment design, interactive features, and multiplayer functionality to create an engaging social VR experience.
+                    <br><br>
+                    My role in this project is as the <span class="portfolio-emphasis">lead programmer and Unity developer</span>. I am responsible for almost all aspects of the Unity implementation, including interactive systems, world functionality, multiplayer synchronization, audio systems, user interfaces, optimization, and overall technical integration. While other team members focus on modeling and texturing, my responsibility is to transform these assets into a fully functional VRChat experience through custom programming and system design using Unity, UdonSharp, and the VRChat SDK.                 
+                    </span>                    
+                 </div>                 
+             </div>
+             <div class="tech-stack">
+                    <h2>Technology Stack</h2>
+
+                    <div class="tech-tags">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">UdonSharp</span>
+                        <span class="tech-tag">VRChat SDK</span>
+                        <span class="tech-tag">Multiplayer Networking</span>
+                        <span class="tech-tag">Custom UI</span>
+                        <span class="tech-tag">Video Streaming</span>
+                        <span class="tech-tag">Interaction Frameworks</span>
+                        <span class="tech-tag">World Optimization</span>
+                        <span class="tech-tag">Modular Architecture</span>
+                    </div>
+                </div>
+             <div id="portfolio-content">
+                <!--VIDEOPLAYER BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="gallery-container">
+                        <div class="portfolio-image">
+                            <a class="gallery-link" href="images/VRChatClubWorld/VRChatVideoplayer_Diagram.png" target="_blank">
+                                <img class="gallery-image" src="images/VRChatClubWorld/VRChatVideoplayer_Diagram.png">
+                            </a>
+                        </div>
+
+                        <div class="gallery-thumbnails">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatVideoplayer_Diagram.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatVideoplayer_Sync Flow.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatVideoplayer_SyncCode.png">
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-text">
+                        <h2>Custom Video Player</h2>
+                        <p class="project-text">
+                        The VRChat World includes a custom-built video player system designed to support synchronized media playback across multiple users. Rather than relying on existing community-made solutions, I developed the system myself to gain a deeper understanding of the VRChat SDK, UdonSharp networking, ownership synchronization, and multiplayer state management. Building the system from scratch also provided greater flexibility for integrating future project-specific features without being constrained by the architecture of third-party solutions.
+                        <br><br>
+                        One of the primary design goals was modularity. The system is built around a collection of independent behaviours responsible for specific functionality such as URL synchronization, playback control, timestamp synchronization, mode management, and error handling. By separating these responsibilities into individual components, features can be added, modified, or removed without affecting the rest of the system. This approach also simplified maintenance and improved the overall scalability of the architecture as the project continued to grow.
+                        <br><br>
+                        The most challenging aspect of the implementation was ensuring reliable synchronization between users in a multiplayer environment. The system needed to maintain consistent playback states, synchronize timestamps, correctly transfer ownership when required, and support late joiners without disrupting the viewing experience for existing users. To achieve this, the video player uses synchronized variables, ownership management, server-time-based playback synchronization, and dedicated resynchronization functionality to keep clients aligned.
+                        <br><br>
+                        To improve reliability, the system also includes custom error handling and automatic retry functionality. When recoverable playback errors occur, the player can automatically attempt to reload the media source while providing clear feedback to users through a dedicated UI layer. This helped create a more robust experience while also providing valuable experience working with fault-tolerant system design within the constraints of the VRChat platform.
+                        <br><br>
+                        Through developing this system, I gained practical experience with multiplayer synchronization, network ownership management, modular software architecture, event-driven system design, and the technical limitations involved in building scalable social VR experiences.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter"> Multiplayer Synchronization</div>
+                            <div class="button"><span class="project-filter"> Network Ownership</div>         
+                            <div class="button"><span class="project-filter"> Modular Architecture</div>                        
+                        </div>  
+                    </div>                     
+                 </div>   
+                <!--VIDEOPLAYER END-->  
+                <!--STAFF AUTHORIZATION BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="gallery-container">
+
+                        <div class="portfolio-image">
+                            <a class="gallery-link" href="images/VRChatClubWorld/VRChatAuthorization_Diagram.png" target="_blank">
+                                <img class="gallery-image" src="images/VRChatClubWorld/VRChatAuthorization_Diagram.png">
+                            </a>
+                        </div>
+
+                        <div class="gallery-thumbnails">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatAuthorization_Diagram.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatAuthorization_Code.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatAuthorization_Overview.png">
+                        </div>
+
+                    </div>
+                     <div class="portfolio-text">
+                        <h2>Authorization</h2>
+                        <p class="project-text">
+                        The VRChat World includes a custom authorization system designed to control access to staff-only functionality throughout the world. The system was created to provide a flexible and reusable method for restricting administrative features without requiring authorization logic to be duplicated across multiple systems. By centralizing access control, new staff-only functionality can be integrated more easily while maintaining a consistent user experience.
+                        <br><br>
+                        The authorization system supports two authentication methods: whitelist-based access and code-based authentication. Authorized users can automatically gain access through a configurable whitelist, while additional users can be granted access through an in-world keypad interface. Once authenticated, users gain access to restricted controls and functionality that are hidden from regular visitors.
+                        <br><br>
+                        To maintain modularity and scalability, the system was divided into separate components responsible for authorization, access management, user input, and user interface feedback. This separation of responsibilities simplified maintenance and allowed authentication methods and permission-controlled features to be extended independently. The architecture follows the same modular design principles used throughout the project, helping keep systems reusable and easy to integrate with future functionality.
+                        <br><br>
+                        One of the primary technical challenges during development was balancing simplicity, maintainability, and performance. Since whitelist validation requires checking player identities against a collection of authorized users, I spent time evaluating how the system would scale as the number of staff members increased. Although the current implementation is designed for relatively small staff teams, the architecture was developed with future expansion in mind while remaining lightweight within the constraints of the VRChat SDK and UdonSharp environment.
+                        <br><br>
+                        Through developing this system, I gained practical experience with authorization design, access control workflows, modular software architecture, UI-driven interactions, and designing reusable systems for social VR environments.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter"> Authorization Systems</div>
+                            <div class="button"><span class="project-filter"> Whitelist Authentication</div>         
+                            <div class="button"><span class="project-filter"> Access Control</div>                        
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--STAFF AUTHORIZATION END-->  
+                <!--INTERACTION FRAMEWORK BEGIN-->
+                 <div class="portfolio portfolio-first">                    
+                     <div class="gallery-container">
+
+                        <div class="portfolio-image">
+                            <a class="gallery-link" href="images/VRChatClubWorld/VRChatInteractionFramework_Diagram.png" target="_blank">
+                                <img class="gallery-image" src="images/VRChatClubWorld/VRChatInteractionFramework_Diagram.png">
+                            </a>
+                        </div>
+
+                        <div class="gallery-thumbnails">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatInteractionFramework_Diagram.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatInteractionFramework_Code.png">
+                            <img class="thumbnail" src="images/VRChatClubWorld/VRChatInteractionFramework_Inspector.png">
+                        </div>
+
+                    </div>
+                     <div class="portfolio-text">
+                        <h2>Modular Interaction Framework</h2>
+                        <p class="project-text">
+                        The VRChat World contains a custom interaction framework designed to provide reusable buttons and toggle controls throughout the world. Rather than creating dedicated interaction scripts for every object, I developed a shared interaction architecture built around a common base class and event-driven communication.
+                        <br><br>
+                        The framework consists of two primary interaction types: buttons and toggles. Buttons trigger one-time actions, while toggles maintain a persistent on/off state and can automatically enable or disable groups of GameObjects. Both interaction types inherit from a shared base component that handles player interaction and event dispatching.
+                        <br><br>
+                        A key design goal was reducing coupling between systems. Instead of hard-coding references to specific features, interactions communicate through configurable event listeners and custom events. This allows the same interaction component to be reused for staff tools, environmental controls, lighting systems, security controls, and future gameplay features without requiring modifications to the underlying code.
+                        <br><br>
+                        By exposing listeners, events, and toggle targets through the Unity Inspector, new functionality can be configured entirely through data rather than additional scripting. This improved maintainability, reduced duplicate code, and accelerated development as the world grew in complexity.
+                        </p>
+                        <div class="button-container"> 
+                            <div class="button"><span class="project-filter"> Event-Driven Systems</div>
+                            <div class="button"><span class="project-filter"> Reusable Frameworks</div>                               
+                       </div>  
+                    </div>                     
+                 </div>   
+                <!--INTERACTION FRAMEWORK END-->  
+
+                
+            </div>  
+        </div>
+        <!--VRCHAT CLUB WORLD END-->
         <!--PROJECT AIRPORT ARCHITECT PAGE-->
         <div id="airport-architect">            
             <div class="portfolio-header"> <span class="color"> Airport </span> Architect
@@ -736,6 +902,7 @@
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
     <!--particles script-->
     <script>
   particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
